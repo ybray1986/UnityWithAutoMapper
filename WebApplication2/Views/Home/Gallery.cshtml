@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/custom_css.css" rel="stylesheet" />
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="menu">
+        <a class="active" href="#">Home</a>
+        @Html.ActionLink("Survey Page","SurveyPage", "Home", new { @class = "button"})
+    </div>
+    <div class="container">
+        <img src="~/Content/Images/1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"/>
+        <img src="~/Content/Images/2.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"/>
+        <img src="~/Content/Images/3.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"/>
+        <img src="~/Content/Images/4.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"/>
+        <img src="~/Content/Images/5.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"/>
+    </div>
+</body>
+</html>

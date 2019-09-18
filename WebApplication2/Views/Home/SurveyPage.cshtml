@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SurveyPage</title>
+</head>
+<body>
+    <div>Какую книгу я бы хотел взять в библиотеке</div>
+    @using (Ajax.BeginForm("SurveyPage","Home", null, new { @class = "form-control" }))
+    {
+        @Html.TextArea("text_area", new { @class = "form-control" })
+        <input type="submit" value="Send"/>
+    }
+</body>
+</html>
