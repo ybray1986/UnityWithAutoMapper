@@ -88,8 +88,7 @@ namespace WebApplication2.Controllers
                 return RedirectToAction("Index");
             }
             else return View(model);
-
-            
         }
+
     }
 }
