@@ -13,16 +13,16 @@ namespace BusinessLayer.Author
 {
    public class AuthorBO : BusinessObjectBase
     {
-        private readonly IUnityContainer unityContainer;
+        //private readonly IUnityContainer unityContainer;
         
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public AuthorBO(IMapper mapper, UnitOfWorkFactory unitOfWorkFactory, IUnityContainer unityContainer)
+        public AuthorBO(IMapper mapper, UnitOfWorkFactory unitOfWorkFactory/*, IUnityContainer unityContainer*/)
             :base(mapper, unitOfWorkFactory)
         {
-            this.unityContainer = unityContainer;
+            //this.unityContainer = unityContainer;
         }
 
         public AuthorBO GetAuthorsListById(int? id)
